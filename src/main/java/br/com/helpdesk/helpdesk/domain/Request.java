@@ -15,7 +15,8 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
-@Entity(name = "TB_REQUEST")
+@Entity(name = "Request")
+@Table(name = "TB_REQUEST")
 public class Request implements Serializable {
 
     @Serial

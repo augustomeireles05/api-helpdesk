@@ -17,7 +17,8 @@ import java.util.stream.Collectors;
 @Setter
 @AllArgsConstructor
 @EqualsAndHashCode
-@Entity(name = "TB_PEOPLE")
+@Entity(name = "People")
+@Table(name = "TB_PEOPLE")
 public abstract class People implements Serializable {
 
     @Serial
@@ -37,6 +38,7 @@ public abstract class People implements Serializable {
     protected Set<Integer> profiles = new HashSet<>(); //Não permite dois perfis com mesmo valor
 
     @JsonFormat(pattern = "dd/MM/yyyy")
+    @Column(name ="CREATED_DATE")
     protected LocalDate createdDate = LocalDate.now();
 
     public People() {

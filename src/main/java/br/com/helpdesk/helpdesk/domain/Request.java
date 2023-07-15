@@ -12,10 +12,8 @@ import java.time.LocalDate;
 
 @Getter
 @Setter
-@AllArgsConstructor
-@NoArgsConstructor
 @EqualsAndHashCode
-@Entity(name = "Request")
+@Entity
 @Table(name = "TB_REQUEST")
 public class Request implements Serializable {
 
@@ -48,4 +46,14 @@ public class Request implements Serializable {
     private Client client;
 
 
+    public Request(Long id, Priority priority, Status status, String title, String observation, Technician technician, Client client) {
+        super();
+        this.id = id;
+        this.priority = priority;
+        this.status = status;
+        this.title = title;
+        this.observation = observation;
+        this.technician = technician;
+        this.client = client;
+    }
 }

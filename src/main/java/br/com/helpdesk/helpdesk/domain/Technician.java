@@ -13,7 +13,7 @@ import java.util.List;
 
 @Getter
 @Setter
-@Entity(name = "Technician")
+@Entity
 @Table(name = "TB_TECHNICIAN")
 public class Technician extends People {
 

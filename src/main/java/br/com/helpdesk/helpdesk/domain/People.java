@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 @Setter
 @AllArgsConstructor
 @EqualsAndHashCode
-@Entity
+@MappedSuperclass
 @Table(name = "TB_PEOPLE")
 public abstract class People implements Serializable {
 
